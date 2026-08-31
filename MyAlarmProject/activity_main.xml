@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="#121212">
+
+    <!-- زر تبديل الوضع أو الحالة -->
+    <Button
+        android:id="@+id/btnToggleTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="الوضع الداكن / الفاتح"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- الساعة الرقمية الكبيرة في الخلفية أو الواجهة -->
+    <TextView
+        android:id="@+id/tvClockDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- زر أفقي صغير لنطق الوقت عند النقرتين -->
+    <Button
+        android:id="@+id/btnSpeakTime"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="انقر هنا لنطق الوقت الحالي"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- خانة إدخال الوقت (لوحة أرقام) -->
+    <EditText
+        android:id="@+id/etTimeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="أدخل وقت المنبه (مثال: 07:30)"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#AAAAAA"
+        android:layout_marginBottom="15dp"
+        android:padding="12dp"/>
+
+    <!-- خانة كتابة اسم المهمة -->
+    <EditText
+        android:id="@+id/etTaskName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="اكتب اسم المهمة أو التنبيه هنا"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#AAAAAA"
+        android:layout_marginBottom="15dp"
+        android:padding="12dp"/>
+
+    <!-- زر ضبط المنبه وتشغيله -->
+    <Button
+        android:id="@+id/btnSetAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="تشغيل المنبه والمراقبة"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"/>
+
+</LinearLayout>
